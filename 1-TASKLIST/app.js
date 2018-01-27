@@ -32,8 +32,10 @@ function getTasks() {
 
 /*============ Add Task  =============*/
 function addTask(e) {
-    if(taskInput.value === '')
+    if(taskInput.value.trim() === '') {
         alert('Add a task');
+        return;
+    }
 
     // Create a task in the DOM
     createTask(taskInput.value);
