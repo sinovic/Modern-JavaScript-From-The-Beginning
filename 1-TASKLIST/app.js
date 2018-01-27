@@ -35,6 +35,7 @@ function addTask(e) {
     if(taskInput.value === '')
         alert('Add a task');
 
+    // Create a task in the DOM
     createTask(taskInput.value);
 
     // Store Tasks in Local Storage
